@@ -60,9 +60,11 @@ def add_doc(args):
         table = db.create_table(table_name, schema=schema)
 
     # Create a vector from the document string
-    vector = genai.embed_content(model="models/embedding-001",
+    result = genai.embed_content(model="models/embedding-001",
                                  content=args.document,
-                                 task_type="retrieval_document")["embedding"]
+                                 task_type="retrieval_document",
+                                 output_dimensionality=VECTOR_DIM)
+    vector = result["embedding"]
 
     table.add([{"vector": vector, "text": args.document}])
     print(json.dumps({"status": "success", "message": "Document added."}))
@@ -80,9 +82,11 @@ def search(args):
         return
 
     # Create a vector from the query string
-    vector = genai.embed_content(model="models/embedding-001",
+    result = genai.embed_content(model="models/embedding-001",
                                  content=args.query,
-                                 task_type="retrieval_query")["embedding"]
+                                 task_type="retrieval_query",
+                                 output_dimensionality=VECTOR_DIM)
+    vector = result["embedding"]
 
     # Perform the search and return the results as JSON
     results = table.search(vector).limit(5).to_pandas().to_dict(orient="records")

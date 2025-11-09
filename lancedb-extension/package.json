@@ -1,18 +1,24 @@
 {
-  "name": "mcp-server-example",
+  "name": "lancedb-gemini-extension",
   "version": "1.0.0",
-  "description": "Example MCP Server for Gemini CLI Extension",
-  "type": "module",
-  "main": "example.js",
+  "description": "A Gemini CLI extension for LanceDB.",
+  "main": "dist/example.js",
   "scripts": {
     "build": "tsc"
   },
-  "devDependencies": {
-    "typescript": "~5.4.5",
-    "@types/node": "^20.11.25"
-  },
+  "keywords": [
+    "gemini",
+    "cli",
+    "extension",
+    "lancedb"
+  ],
+  "author": "Jules",
+  "license": "Apache-2.0",
   "dependencies": {
-    "@modelcontextprotocol/sdk": "^1.11.0",
+    "@modelcontextprotocol/sdk": "^0.1.0",
     "zod": "^3.22.4"
+  },
+  "devDependencies": {
+    "typescript": "^5.3.3"
   }
 }

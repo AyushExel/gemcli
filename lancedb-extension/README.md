@@ -48,3 +48,16 @@ You can use natural language to create tables, add documents, search, and delete
     ```
     delete the lancedb table named my_table
     ```
+
+### Custom Commands
+
+You can also use custom commands for more direct control.
+
+*   **/lancedb:create-table [table_name]**
+    *   Creates a new LanceDB table. If no table name is provided, a default table will be created.
+*   **/lancedb:add-doc <document> [table_name]**
+    *   Adds a document to a LanceDB table. If no table name is provided, the document will be added to the default table.
+*   **/lancedb:search <query> [table_name]**
+    *   Searches for similar documents in a LanceDB table. If no table name is provided, the search will be performed on the default table.
+*   **/lancedb:delete-table <table_name>**
+    *   Deletes a LanceDB table.

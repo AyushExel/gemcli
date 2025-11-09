@@ -1,5 +1,5 @@
 {
-  "name": "mcp-server-example",
+  "name": "lancedb-gemini-extension",
   "version": "1.0.0",
   "contextFileName": "GEMINI.md",
   "mcpServers": {
