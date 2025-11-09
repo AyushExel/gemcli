@@ -1,0 +1,12 @@
+{
+  "name": "mcp-server-example",
+  "version": "1.0.0",
+  "contextFileName": "GEMINI.md",
+  "mcpServers": {
+    "nodeServer": {
+      "command": "node",
+      "args": ["${extensionPath}${/}dist${/}example.js"],
+      "cwd": "${extensionPath}"
+    }
+  }
+}

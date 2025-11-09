@@ -1,0 +1,6 @@
+lancedb
+pyarrow
+numpy
+google-generativeai
+pandas
+sentence-transformers
