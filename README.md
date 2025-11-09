@@ -15,7 +15,21 @@ This extension provides a simple integration with the LanceDB vector database fo
     ```
     *(Note: Replace with the actual URL of the extension repository)*
 
-3.  **Install Python dependencies:**
+3.  **Find the extension path:**
+    Run `gemini extensions list` to find the installation path for `lancedb-gemini-extension`.
+
+4.  **Navigate to the extension directory:**
+    ```bash
+    cd <path-to-lancedb-gemini-extension>
+    ```
+    *(Note: Replace `<path-to-lancedb-gemini-extension>` with the actual path from the previous step)*
+
+5.  **Install Node.js dependencies:**
+    ```bash
+    npm install
+    ```
+
+6.  **Install Python dependencies:**
     ```bash
     pip install -r requirements.txt
     ```
