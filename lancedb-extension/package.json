@@ -1,0 +1,24 @@
+{
+  "name": "lancedb-gemini-extension",
+  "version": "1.0.0",
+  "description": "A Gemini CLI extension for LanceDB.",
+  "main": "dist/example.js",
+  "scripts": {
+    "build": "tsc"
+  },
+  "keywords": [
+    "gemini",
+    "cli",
+    "extension",
+    "lancedb"
+  ],
+  "author": "Jules",
+  "license": "Apache-2.0",
+  "dependencies": {
+    "@modelcontextprotocol/sdk": "^0.1.0",
+    "zod": "^3.22.4"
+  },
+  "devDependencies": {
+    "typescript": "^5.3.3"
+  }
+}
